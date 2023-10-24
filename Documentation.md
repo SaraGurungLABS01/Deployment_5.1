@@ -1,5 +1,8 @@
 ## Purpose
 
+The goal of this deployment project is to effectively employ a Jenkins agent in the deployment process of a Banking Flask application on Amazon EC2 instances. This project involves establishing a distinct GitHub repository, orchestrating the necessary AWS infrastructure, configuring Jenkins with a Jenkins agent, and seamlessly deploying the Flask application. The documentation is intended to serve as a comprehensive guide, ensuring clarity in each step of the process.
+
+
 ## Creating new key pair
 
 Used the linked steps to create a new key pair and attach the new private key to all the new instances
@@ -41,9 +44,38 @@ Similar to software configuration in first instance following software packages 
    - `python3.7-venv`
 Similarly, `installation.sh` script was used to automate the software installation process.
 
-## Jenkin Agent
+## Setting Jenkin Agent 'awsDeploy'
 
-Follow the steps to set up a Jenkin Agent : [Create a Jenkins Agent](https://scribehow.com/shared/Step-by-step_Guide_Creating_an_Agent_in_Jenkins__xeyUT01pSAiWXC3qN42q5w)
+Follow the steps to set up a Jenkin Agent for 1st Application Server: [Create a Jenkins Agent](https://scribehow.com/shared/Step-by-step_Guide_Creating_an_Agent_in_Jenkins__xeyUT01pSAiWXC3qN42q5w)
+
+## Initial Deployment in first application instance
+
+Created a multi branch pipeline and deploy the Retail Banking application
+
+**Result**: Succesfully deployed the flask application
+
+![image](https://github.com/SaraGurungLABS01/Deployment_5.1/assets/140760966/9f25829a-18e1-4452-bab9-b034e7414fff)
+
+![image](https://github.com/SaraGurungLABS01/Deployment_5.1/assets/140760966/0a92df82-08f8-4acd-8b4b-8129b71c6237)
+
+## Setting up Jenkin Agent 'awsDeploy2' for second deployment
+
+Refer to the steps listed in the first deployment
+
+## Second Deployment in second application instance
+
+Created a second multi branch pipeline and deploy the Retail Banking application
+
+**Result**: Succesfully deployed the flask application
+
+
+
+
+
+
+
+
+
 
 
 
