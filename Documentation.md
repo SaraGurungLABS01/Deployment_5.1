@@ -62,11 +62,51 @@ Created a multi branch pipeline and deploy the Retail Banking application
 
 Refer to the steps listed in the first deployment
 
+Make sure to edit the jenkins file: 
+![image](https://github.com/SaraGurungLABS01/Deployment_5.1/assets/140760966/b719f6a2-bba4-45b0-8101-38b0dded3d98)
+
+
+
+
 ## Second Deployment in second application instance
 
-Created a second multi branch pipeline and deploy the Retail Banking application
+Ran the multi branch pipeline and deploy the Retail Banking application in the second application instance
 
 **Result**: Succesfully deployed the flask application
+
+![image](https://github.com/SaraGurungLABS01/Deployment_5.1/assets/140760966/951dd709-77f7-44a2-99f6-a2e419e139af)
+
+
+
+
+## Optimization
+
+- **Load Balancer**: To improve availability, a load balancer can be placed in front of application servers. This load balancer efficiently distributes incoming traffic across multiple EC2 instances, ensuring redundancy and enhanced availability. This way, even if one server experiences issues, the load balancer seamlessly redirects traffic to other healthy instances, maintaining a highly available application for users.
+
+- **Auto Scaling**: To enhance availability, Auto Scaling groups can be employed to automatically adjust the number of EC2 instances based on traffic demand. This dynamic scaling ensures that the application can effectively handle varying workloads and maintains availability even during traffic spikes. If one instance encounters issues, Auto Scaling rapidly replaces it with a healthy one, contributing to a resilient and consistently available user experience.
+
+- **Multi-Availability Zone Deployment**: For increased availability, consider expanding to multiple Availability Zones (AZs). This strategic deployment architecture enhances resilience against failures and offers users a more reliable and available service.
+
+## Purpose of Using Jenkins Agent
+
+## Purpose of a Jenkins Agent
+
+A Jenkins agent plays a pivotal role in optimizing the Continuous Integration and Continuous Deployment (CI/CD) pipeline. Its key purposes are as follows:
+
+- **Parallel Execution**: Jenkins agents enable parallel execution of tasks, significantly expediting the CI/CD process and facilitating the handling of larger workloads efficiently.
+
+- **Distributed Builds**: These agents distribute builds and deployments across multiple nodes, making Jenkins suitable for various environments and configurations. This distributed approach enhances efficiency and resource utilization.
+
+- **Resource Isolation**: Agents isolate resources for specific jobs, preventing interference between tasks and ensuring optimal resource allocation. This aids in maintaining consistency and predictability in the CI/CD process.
+
+- **Platform Flexibility**: They can be configured on various machines with different operating systems and configurations, accommodating diverse project requirements. This flexibility is particularly valuable in multi-environment scenarios.
+
+- **Scalability**: Jenkins agents can be easily scaled up or down based on workload demands, ensuring that they can effectively handle increased job requirements, contributing to a responsive CI/CD pipeline.
+
+- **Fault Tolerance**: Agents provide fault tolerance, automatically redistributing tasks to other available agents in case of failures. This feature ensures the resilience of the CI/CD pipeline, even when faced with technical issues or server failures.
+
+
+
 
 
 
