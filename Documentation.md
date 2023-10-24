@@ -77,6 +77,10 @@ Ran the multi branch pipeline and deploy the Retail Banking application in the s
 ![image](https://github.com/SaraGurungLABS01/Deployment_5.1/assets/140760966/951dd709-77f7-44a2-99f6-a2e419e139af)
 
 
+## System Diagram
+
+![Untitled Diagram drawio](https://github.com/SaraGurungLABS01/Deployment_5.1/assets/140760966/78634693-cd7e-4a02-a0c2-032ddc13d1b4)
+
 
 
 ## Optimization
@@ -88,8 +92,6 @@ Ran the multi branch pipeline and deploy the Retail Banking application in the s
 - **Multi-Availability Zone Deployment**: For increased availability, consider expanding to multiple Availability Zones (AZs). This strategic deployment architecture enhances resilience against failures and offers users a more reliable and available service.
 
 ## Purpose of Using Jenkins Agent
-
-## Purpose of a Jenkins Agent
 
 A Jenkins agent plays a pivotal role in optimizing the Continuous Integration and Continuous Deployment (CI/CD) pipeline. Its key purposes are as follows:
 
