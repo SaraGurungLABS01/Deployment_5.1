@@ -65,6 +65,30 @@ Refer to the steps listed in the first deployment
 Make sure to edit the jenkins file: 
 ![image](https://github.com/SaraGurungLABS01/Deployment_5.1/assets/140760966/b719f6a2-bba4-45b0-8101-38b0dded3d98)
 
+## Steps
+
+***Step 1***: Clone the Repository and Navigate to the Directory
+```bash
+git clone https://github.com/SaraGurungLABS01/Deployment_5.1.git
+cd Deployment_5.1/
+```
+***Step 2***:  Create a New Branch and Modify Jenkins Files
+```bash
+git checkout -b new_branch2
+sudo nano Jenkinsfile
+```
+***Step 3***: Commit Changes
+```bash
+git add Jenkinsfile
+git commit -m "Required changes for second deployment"
+```
+***Step 4***: Push Changes to GitHub
+```bash
+git push origin new_branch2
+```
+***Remaining steps in the Github account***
+- Created a pull request on GitHub detailing the changes.
+- Successfully merged the pull request into the main branch.
 
 
 
